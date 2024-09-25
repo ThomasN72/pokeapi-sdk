@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Debug pytest (Poetry)",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "pytest",  // Run pytest as a module
+            "args": [
+                "--maxfail=1",  // Stops on first failure
+                "--disable-warnings"
+            ],
+            "console": "integratedTerminal",  // Use VSCode's integrated terminal
+            "justMyCode": true,  // Allows stepping into third-party libraries if needed
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"  // Ensures local imports work
+            },
+            "python": "/Users/tommyng/Library/Caches/pypoetry/virtualenvs/pokeapi-sdk-1MXH8VCS-py3.12/bin/python"  // Updated with the full path to your Poetry virtual environment's Python
+        }
+    ]
+}

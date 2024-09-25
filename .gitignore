@@ -1,0 +1,25 @@
+# Virtual environments
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre
+.pyre/
+
+# End of the list
+
+# Pytest
+.pytest_cache/
+
+# PyCharm
+__pycache__/
