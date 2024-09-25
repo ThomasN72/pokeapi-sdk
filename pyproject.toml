@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pokeapi-sdk"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["Your Name <you@example.com>"]
 readme = "README.md"
@@ -43,3 +43,8 @@ skip = [".venv", ".history"]
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.urls]
+homepage = "https://github.com/ThomasN72/pokeapi-sdk"
+repository = "https://github.com/ThomasN72/pokeapi-sdk"

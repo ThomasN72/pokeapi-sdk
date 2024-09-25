@@ -23,3 +23,6 @@ dmypy.json
 
 # PyCharm
 __pycache__/
+
+
+/dist
