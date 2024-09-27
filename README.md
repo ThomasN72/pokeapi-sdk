@@ -70,3 +70,14 @@ The SDK uses custom exceptions to handle various error cases:
 - **`PokemonNotFoundError`**: Raised when a specific Pokémon is not found (404 error).
 
 You can handle these exceptions as shown in the examples above to ensure your application handles errors gracefully.
+
+## Critical Design Decisions
+Unified Error Handling
+Instead of having multiple exceptions scattered throughout the SDK, we’ve consolidated error handling into a single base class SDKError. 
+
+Link to Tools Used:
+Requests Library: Used for making HTTP requests to the Pokémon API
+Pytest: Used for unit testing the SDK.
+
+Pagination Support in get_pokemons
+Design Rationale: The get_pokemons method includes parameters for pagination (limit and offset), which are essential for handling large datasets like the Pokémon list.
